@@ -20,7 +20,9 @@ function generateStyles() {
   const borderRadius = document.getElementById("border-r").value;
 
   // Create the box shadow CSS property value
-  const boxShadow = `${shadowInset} ? "inset " : ""}${xShadow}px ${yShadow}px ${blurRadius}px ${spreadRadius}px ${hexToRgba(
+  const boxShadow = `${
+    shadowInset ? "inset " : ""
+  } ${xShadow}px ${yShadow}px ${blurRadius}px ${spreadRadius}px ${hexToRgba(
     shadowColor,
     shadowOpacity
   )}`;
@@ -40,6 +42,16 @@ function hexToRgba(shadowColor, shadowOpacity) {
   const b = parseInt(shadowColor.substr(5, 2), 16);
 
   return `rgba(${r}, ${g}, ${b}, ${shadowOpacity})`;
+}
+
+// Function to copy the generated styles
+function copyStyles() {
+  styles.select();
+  document.execCommand("copy");
+  copyButton.innerText = "Copied!";
+  setTimeout(() => {
+    copyButton.innerText = "Copy Styles";
+  }, 500);
 }
 
 generateStyles();
