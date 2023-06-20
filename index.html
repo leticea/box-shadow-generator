@@ -8,6 +8,26 @@
   <title>Box Shadow Generator</title>
 </head>
 <body>
+  <div class="container">
+    <div class="result">
+      <div id="preview"></div>
+    </div>
+
+    <div class="settings">
+      <div class="range-wrapper">
+        <label for="x-shadow">Horizontal Shadow :</label>
+        <input type="range" id="x-shadow" min="-100" max="100" value="-6">
+      </div>
+      <div class="range-wrapper">
+        <label for="y-shadow">Vertical Shadow :</label>
+        <input type="range" id="y-shadow" min="-100" max="100" value="15">
+      </div>
+      <div class="range-wrapper">
+        <label for="Blur Radius">Blur Radius :</label>
+        <input type="range" id="blur-r" min="0" max="100" value="30">
+      </div>
+    </div>
+  </div>
 
 
   <script src="script.js"></script>

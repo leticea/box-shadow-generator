@@ -11,7 +11,7 @@
   <img alt="" src=".github/image.png">
 </p>
 
-## Box Shadow Generator
+# Box Shadow Generator
 
 ## 🚀 Tecnologias
 
