@@ -55,17 +55,19 @@
 
         <div class="input-wrapper">
           <label for="inset-shadow">Inset Shadow :</label>
-          <input type="checkbox" id="inset-shadow">
+          <input type="checkbox" id="inset-shadow" />
         </div>
 
         <div class="color-wrapper">
           <label for="shadow-color">Shadow Color :</label>
-          <input type="color" id="shadow-color">
+          <input type="color" id="shadow-color" />
         </div>
-
       </div>
 
-      
+      <div class="code-container">
+        <textarea id="styles" rows="2"></textarea>
+        <button id="copy-styles" onclick="copyStyles()">Copy Styles</button>
+      </div>
     </div>
 
     <script src="script.js"></script>
