@@ -54,3 +54,29 @@ input[type="range"] {
   width: 100%;
   cursor: pointer;
 }
+
+input[type="checkbox"] {
+  cursor: pointer;
+}
+
+.code-container {
+  display: grid;
+  grid-template-columns: 6fr 2fr;
+  gap: 10px;
+  margin-top: 20px;
+}
+
+.code-container button {
+  background-color: #311b92;
+  border-radius: 5px;
+  cursor: pointer;
+  border: none;
+  color: #fff;
+}
+
+textarea {
+  resize: none;
+  padding: 5px;
+  border: 1px solid #000;
+  border-radius: 5px;
+}
