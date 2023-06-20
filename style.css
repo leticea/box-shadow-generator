@@ -22,3 +22,17 @@ body {
   border-radius: 25px;
   box-shadow: 0 20px 40px rgba(2, 42, 83, 0.2);
 }
+
+.result {
+  padding: 20px 0 120px;
+}
+
+#preview {
+  background-color: #311b92;
+  width: 200px;
+  height: 200px;
+  position: relative;
+  margin: auto;
+  border-radius: 70px;
+  box-shadow: -6px 15px 30px 6px rgba(0, 0, 0, 0.5);
+}
