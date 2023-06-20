@@ -36,3 +36,21 @@ body {
   border-radius: 70px;
   box-shadow: -6px 15px 30px 6px rgba(0, 0, 0, 0.5);
 }
+
+.settings {
+  display: grid;
+  grid-template-columns: 6fr 6fr;
+  gap: 15px 25px;
+}
+
+.range-wrapper,
+#color-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+input[type="range"] {
+  width: 100%;
+  cursor: pointer;
+}
